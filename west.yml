@@ -4,10 +4,12 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: petejohanson
       url-base: https://github.com/petejohanson
+    - name: jborkowski
+      url-base: https://github.com/jborkowski
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: jborkowski
+      revision: mouse-ftc
       import: app/west.yml
   self:
     path: config
