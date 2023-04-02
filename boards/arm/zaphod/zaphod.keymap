@@ -56,13 +56,13 @@
             bindings = <
                 &kp EXCL   &kp AT      &kp HASH     &kp DOLLAR   &kp PRCNT     &kp CARET    &kp AMPS     &kp STAR     &kp SEMI     &kp COLON
                 &kp LCTRL  &kp LCTRL   &kp GRAVE    &kp APOS     &kp DQT       &kp SQT      &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
-                &kp F11    &PSCRN      &none        &kp UNDER    &none         &none        &none        &none        &none        &kp DQT
+                &kp F11    &kp PSCRN   &none        &kp UNDER    &none         &none        &none        &none        &none        &kp DQT
                                                     &trans       &trans        &trans       &trans
            >;
         };
-         
-        raise_layer {
-    label = "Raise";
+
+    raise_layer {
+      label = "Raise";
             bindings = <
                 &kp TAB    &kp TILDE   &kp LPAR     &kp RPAR     &kp UNDER     &kp MINUS    &kp N7       &kp N8       &kp N9       &kp DOT
                 &kp ESC    &kp PIPE    &kp LBRC     &kp RBRC     &kp PLUS      &kp EQUAL    &kp N4       &kp N5       &kp N6       &kp RET
