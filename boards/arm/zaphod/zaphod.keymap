@@ -4,6 +4,10 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/mouse.h>
 
+#define U_MOUSE_MOVE_MAX 1250
+#define U_MOUSE_MOVE_EXPONENT 1
+#define U_MOUSE_MOVE_TIME 1500
+#define U_MOUSE_MOVE_DELAY 0
 
 #define DEFAULT 0
 #define LOWER   1
@@ -42,7 +46,7 @@
                 &kp Q       &kp W       &kp F        &kp P        &kp B         &kp J        &kp L        &kp U        &kp Y        &kp BSPC
                 &hm LGUI A  &hm LALT R  &hm LCTL S   &hm LSHFT T  &kp G         &kp K        &hm RSHFT N  &hm RCTL E   &hm RALT I   &hm RGUI O
                 &kp Z       &kp X       &kp C        &kp D        &kp V         &kp M        &kp H        &kp COMMA    &kp DOT      &kp FSLH
-                                                     &mo LOWER    &kp SPC       &kp RALT     &mo RAISE
+                                                     &mo LOWER    &kp SPC       &kp RET      &mo RAISE
             >;
         };
 
@@ -52,11 +56,11 @@
             bindings = <
                 &kp EXCL   &kp AT      &kp HASH     &kp DOLLAR   &kp PRCNT     &kp CARET    &kp AMPS     &kp STAR     &kp SEMI     &kp COLON
                 &kp LCTRL  &kp LCTRL   &kp GRAVE    &kp APOS     &kp DQT       &kp SQT      &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
-                &none      &none       &none        &kp UNDER    &none         &none        &none        &none        &none        &kp DQT
+                &kp F11    &PSCRN      &none        &kp UNDER    &none         &none        &none        &none        &none        &kp DQT
                                                     &trans       &trans        &trans       &trans
            >;
         };
-
+         
         raise_layer {
     label = "Raise";
             bindings = <
@@ -70,8 +74,8 @@
         adjust_layer {
     label = "Other";
             bindings = <
-                &none      &none          &mmv MOVE_UP    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_INC &kp C_PREV   &kp C_NEXT   &mwh SCROLL_UP    &bt BT_CLR
-                &trans     &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &kp C_BRI_DEC &mkp LCLK    &mkp RCLK    &mwh SCROLL_DOWN  &none
+                &none      &none          &mmv MOVE_UP    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_INC &kp C_PREV   &kp C_NEXT   &mwh SCROLL_DOWN  &bt BT_CLR
+                &trans     &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &kp C_BRI_DEC &mkp LCLK    &mkp RCLK    &mwh SCROLL_UP    &none
                 &none      &kp C_PLAY     &trans          &none            &none           &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3      &bt BT_SEL 4
                                                           &trans           &trans          &trans        &trans
             >;
