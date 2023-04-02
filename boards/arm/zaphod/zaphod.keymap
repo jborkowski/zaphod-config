@@ -40,17 +40,17 @@
             label = "Base";
             bindings = <
                 &kp Q       &kp W       &kp F        &kp P        &kp B         &kp J        &kp L        &kp U        &kp Y        &kp BSPC
-        	&hm LGUI A  &hm LALT R  &hm LCTL S   &hm LSHFT T  &kp G         &kp K        &hm RSHFT N  &hm RCTL E   &hm RALT I   &hm RGUI O
-        	&kp Z       &kp X       &kp C        &kp D        &kp V         &kp M        &kp H        &kp COMMA    &kp DOT      &kp FSLH
-                    	                             &mo LOWER    &kp SPC       &kp RALT     &mo RAISE
+                &hm LGUI A  &hm LALT R  &hm LCTL S   &hm LSHFT T  &kp G         &kp K        &hm RSHFT N  &hm RCTL E   &hm RALT I   &hm RGUI O
+                &kp Z       &kp X       &kp C        &kp D        &kp V         &kp M        &kp H        &kp COMMA    &kp DOT      &kp FSLH
+                                                     &mo LOWER    &kp SPC       &kp RALT     &mo RAISE
             >;
         };
 
 
-	lower_layer {
-	    label = "Lower";
+    lower_layer {
+      label = "Lower";
             bindings = <
-	        &kp EXCL   &kp AT      &kp HASH     &kp DOLLAR   &kp PRCNT     &kp CARET    &kp AMPS     &kp STAR     &kp SEMI     &kp COLON
+                &kp EXCL   &kp AT      &kp HASH     &kp DOLLAR   &kp PRCNT     &kp CARET    &kp AMPS     &kp STAR     &kp SEMI     &kp COLON
                 &kp LCTRL  &kp LCTRL   &kp GRAVE    &kp APOS     &kp DQT       &kp SQT      &kp LEFT     &kp DOWN     &kp UP       &kp RIGHT
                 &none      &none       &none        &kp UNDER    &none         &none        &none        &none        &none        &kp DQT
                                                     &trans       &trans        &trans       &trans
@@ -58,22 +58,22 @@
         };
 
         raise_layer {
-	    label = "Raise";
+    label = "Raise";
             bindings = <
                 &kp TAB    &kp TILDE   &kp LPAR     &kp RPAR     &kp UNDER     &kp MINUS    &kp N7       &kp N8       &kp N9       &kp DOT
                 &kp ESC    &kp PIPE    &kp LBRC     &kp RBRC     &kp PLUS      &kp EQUAL    &kp N4       &kp N5       &kp N6       &kp RET
-                &kp GRAVE  &trans      &kp LBKT     &kp RBKT     &kp BSLH      &kp N0       &kp N1       &kp N2       &kp N3       &kp EQUAL
+                &kp GRAVE  &none       &kp LBKT     &kp RBKT     &kp BSLH      &kp N0       &kp N1       &kp N2       &kp N3       &kp EQUAL
                                                     &trans       &trans        &trans       &trans
             >;
         };
 
         adjust_layer {
-	    label = "Other";
+    label = "Other";
             bindings = <
                 &none      &none          &mmv MOVE_UP    &kp C_VOL_DN     &kp C_VOL_UP    &kp C_BRI_INC &kp C_PREV   &kp C_NEXT   &mwh SCROLL_UP    &bt BT_CLR
-                &trans     &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans          &kp C_BRI_DEC &mkp LCLK    &mkp RCLK    &mwh SCROLL_DOWN  &none
-                &none      &kp C_PLAY     &trans          &trans           &trans          &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3      &bt BT_SEL 4
-                                                          &trans          &trans           &trans       &trans
+                &trans     &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none           &kp C_BRI_DEC &mkp LCLK    &mkp RCLK    &mwh SCROLL_DOWN  &none
+                &none      &kp C_PLAY     &trans          &none            &none           &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3      &bt BT_SEL 4
+                                                          &trans           &trans          &trans        &trans
             >;
 	};
     };
