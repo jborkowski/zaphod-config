@@ -46,7 +46,7 @@
                 &kp Q       &kp W       &kp F        &kp P        &kp B         &kp J        &kp L        &kp U        &kp Y        &kp BSPC
                 &hm LGUI A  &hm LALT R  &hm LCTL S   &hm LSHFT T  &kp G         &kp K        &hm RSHFT N  &hm RCTL E   &hm RALT I   &hm RGUI O
                 &kp Z       &kp X       &kp C        &kp D        &kp V         &kp M        &kp H        &kp COMMA    &kp DOT      &kp FSLH
-                                                     &mo LOWER    &kp SPC       &kp RET      &mo RAISE
+                                                     &mo LOWER    &kp SPC       &kp TAB      &mo RAISE
             >;
         };
 
